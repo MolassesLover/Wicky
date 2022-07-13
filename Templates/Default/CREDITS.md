@@ -1,8 +1,5 @@
 # Credits
 
-## Direction
-- Project directed and maintained by Maeve "Molasses" Garside ([@MolassesLover](https://github.com/MolassesLover))
-
 ## Source
 - [Engine](https://github.com/turanszkij/WickedEngine) developed by Turánszki János ([@turanskij](https://github.com/turanszkij))
 
