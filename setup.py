@@ -17,7 +17,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name = "Wicky",
-    version = '0.1',
+    version = '0.1.1',
     description = "A libre tool for Wicked Engine development",
     author = "Maeve Garside",
     author_email = "60114762+MolassesLover@users.noreply.github.com",
