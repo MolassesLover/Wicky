@@ -7,8 +7,13 @@ import colorama
 from colorama import Fore
 import os
 import shutil
-import subprocess
+import sys
+from sys import platform
 import time
+
+# Wicky source code
+import Start
+from Start import *
 
 #endregion
 
@@ -68,6 +73,9 @@ def Prompt(projectName):
 
 # Main execution
 if __name__ == '__main__':
+    if platform == "linux" or platform == "linux2":
+        Check_RunCom()
+
     print(f"{Fore.RED}{title}{Fore.WHITE}")
     print(f"{Fore.WHITE}{divider}{Fore.WHITE}")
     print(f"Wicky version: {Fore.YELLOW}{version}{Fore.WHITE}")
