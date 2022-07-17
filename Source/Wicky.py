@@ -19,7 +19,11 @@ from Start import *
 
 #region Arguments
 
-argumentParser = argparse.ArgumentParser(description="Various arguments for the Wicky project generator.")
+argumentParser = argparse.ArgumentParser(description="Whether to generate a project or not.")
+argumentParser.add_argument('-g', 
+                            '--generate', 
+                            action='store_true',)
+
 argumentParser.add_argument('-n', 
                             '--name', 
                             dest = 'projectName', 
@@ -76,17 +80,20 @@ if __name__ == '__main__':
     if platform == "linux" or platform == "linux2":
         Check_RunCom()
 
-    print(f"{Fore.RED}{title}{Fore.WHITE}")
-    print(f"{Fore.WHITE}{divider}{Fore.WHITE}")
-    print(f"Wicky version: {Fore.YELLOW}{version}{Fore.WHITE}")
-    
-    # Dramatic effect~
-    time.sleep(0.25)
+    if arguments.generate:        
+        print(f"{Fore.RED}{title}{Fore.WHITE}")
+        print(f"{Fore.WHITE}{divider}{Fore.WHITE}")
+        print(f"Wicky version: {Fore.YELLOW}{version}{Fore.WHITE}")
+        
+        # Dramatic effect~
+        time.sleep(0.25)
 
-    try:
-        Prompt(arguments.projectName)
-    except KeyboardInterrupt:
-        exit()
-
+        try:
+            Prompt(arguments.projectName)
+        except KeyboardInterrupt:
+            exit()
+    elif len(sys.argv) == 1:
+        argumentParser.print_help()
+        
 elif __name__ == "Wicky":
     print("Using the Wicky project generator!")
