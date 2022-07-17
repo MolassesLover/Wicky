@@ -20,7 +20,7 @@ setup(
     version = '0.1.2',
     description = "A libre tool for Wicked Engine development",
     long_description=long_description,
-    long_description_content_type='text/markdown'
+    long_description_content_type='text/markdown',
     author = "Maeve Garside",
     author_email = "60114762+MolassesLover@users.noreply.github.com",
     url = 'https://github.com/MolassesLover/Wicky',
