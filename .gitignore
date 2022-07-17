@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # Cython generated files
+Source/Start.c
 Source/Wicky.c

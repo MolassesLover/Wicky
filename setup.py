@@ -1,5 +1,19 @@
-from setuptools import setup
+#!/usr/bin/python3
+
+#region Modules
+
 from Cython.Build import cythonize
+from pathlib import Path
+from setuptools import setup, Extension
+
+#endregion
+
+#region Variables
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
+#endregion
 
 setup(
     name = "Wicky",
@@ -10,8 +24,9 @@ setup(
     url = 'https://github.com/MolassesLover/Wicky',
     license = 'MIT',
     packages = ['wicky'],
-    ext_modules = cythonize("Source/Wicky.py"),
+    ext_modules=[Extension('Source/Wicky.py', ['Wicky.c'])],
     Install_requires=[
-        'colorama'
+        'colorama',
+        'pyyaml'
     ]
 )

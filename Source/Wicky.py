@@ -10,6 +10,7 @@ import shutil
 import sys
 from sys import platform
 import time
+import yaml
 
 # Wicky source code
 import Start

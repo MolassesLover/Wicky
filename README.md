@@ -28,6 +28,7 @@ clone the Wicked Engine project into a directory named
 
 ## Dependencies
 [![Colorama](https://img.shields.io/badge/colorama-pip-blue?style=for-the-badge&logo=python&color=E35B57&logoColor=FFFFFF&labelColor=232323)](https://pypi.org/project/colorama/)
+[![PyYAML](https://img.shields.io/badge/yaml-pip-blue?style=for-the-badge&logo=python&color=E35B57&logoColor=FFFFFF&labelColor=232323)](https://pypi.org/project/PyYAML/)
 
 In order to build the generated project you will need a few pieces of software on 
 your system. Depending on your operating system and its distribution, some of these 
